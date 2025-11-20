@@ -1,0 +1,15 @@
+# GitHub Pages Configuration
+theme: 
+title: Chinese Historical Taxation Database
+description: Academic database comparing taxation systems across Chinese dynasties with contemporary civilizations
+url: https://cabindioxide.github.io
+baseurl: /chinese-historical-taxation
+
+# Build settings
+markdown: kramdown
+exclude:
+  - README.md
+  - requirements.txt
+  - analysis/
+  - .gitignore
+  - LICENSE
