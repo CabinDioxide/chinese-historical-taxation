@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "civilization": "Roman Empire",
+    "period": "27 BCE - 476/1453 CE",
+    "subdivisions": ["Principate (27 BCE - 284 CE)", "Dominate (284 - 476 CE)", "Byzantine Empire (330 - 1453 CE)"],
+    "comparative_periods": {
+      "han_dynasty": "27 BCE - 220 CE (overlapping period)",
+      "tang_dynasty": "Byzantine Empire 610 - 907 CE"
+    },
+    "last_updated": "2024-11-20",
+    "data_reliability": "high"
+  },
+  "taxation_system": {
+    "overview": "Roman taxation evolved from tribute-based system to systematic territorial taxation, serving as comparative baseline for imperial fiscal capacity.",
+    "key_characteristics": [
+      "Provincial tribute system",
+      "Direct and indirect taxes",
+      "Tax farming (publicani system)",
+      "Military financing priority"
+    ]
+  },
+  "tax_categories": [
+    {
+      "type": "tributum",
+      "description": "Direct tax on land and personal property",
+      "periods": [
+        {
+          "era": "Late Republic", 
+          "status": "Suspended for Roman citizens (167 BCE)",
+          "provincial_rate": "Variable, typically 5-10% of assessed value",
+          "source": "Pliny, Natural History 33.56"
+        },
+        {
+          "era": "Early Empire",
+          "citizen_rate": "Reintroduced periodically for emergencies",
+          "provincial_rate": "1% annual property tax",
+          "source": "Dio Cassius 56.28"
+        }
+      ]
+    },
+    {
+      "type": "land_tax",
+      "latin_name": "tributum soli",
+      "description": "Tax on agricultural land in provinces",
+      "rates": [
+        {
+          "region": "Egypt",
+          "rate": "1 artaba per aroura (approximately 10% of yield)",
+          "source": "Papyrus documentation",
+          "academic_source": "Foldvary, F. (1999). 'Public Goods and Private Communities'"
+        },
+        {
+          "region": "Africa Proconsularis",
+          "rate": "1/8 to 1/10 of harvest",
+          "percentage": "10-12.5%",
+          "source": "Pliny, Natural History 18.35"
+        }
+      ]
+    },
+    {
+      "type": "poll_tax",
+      "latin_name": "tributum capitis", 
+      "description": "Per capita tax, primarily in eastern provinces",
+      "rates": [
+        {
+          "region": "Egypt",
+          "amount": "40 drachmas per adult male",
+          "age_range": "14-60 years",
+          "exemptions": "Roman citizens, Alexandrians, some priests"
+        },
+        {
+          "region": "Syria",
+          "amount": "4 denarii per person",
+          "coverage": "Adult population"
+        }
+      ]
+    },
+    {
+      "type": "indirect_taxes",
+      "categories": [
+        {
+          "name": "portoria",
+          "description": "Customs duties",
+          "rate": "2-5% of goods value",
+          "collection": "Tax farming system"
+        },
+        {
+          "name": "vicesima hereditatium", 
+          "description": "Inheritance tax",
+          "rate": "5% of estate value",
+          "exemptions": "Close relatives, estates under 100,000 sestertii"
+        },
+        {
+          "name": "centesima rerum venalium",
+          "description": "Sales tax on auctions", 
+          "rate": "1% of sale value"
+        }
+      ]
+    }
+  ],
+  "total_fiscal_burden": {
+    "estimates": [
+      {
+        "scholar": "Peter Heather",
+        "methodology": "GDP percentage estimation",
+        "estimate": "8-12% of GDP",
+        "period": "High Empire (1st-2nd centuries CE)",
+        "source": "Heather, P. (2006). 'The Fall of the Roman Empire'"
+      },
+      {
+        "scholar": "Walter Scheidel",
+        "methodology": "Comparative imperial analysis",
+        "estimate": "5-10% of GDP", 
+        "period": "Principate period",
+        "comparison": "Similar to Han China levels",
+        "source": "Scheidel, W. (2009). 'Rome and China: Comparative Perspectives'"
+      }
+    ]
+  },
+  "han_comparison": {
+    "similarities": [
+      "Comparable total tax burden (7-10% GDP)",
+      "Combination of direct and indirect taxes",
+      "Provincial/regional variation in rates",
+      "Agricultural taxation as primary revenue source"
+    ],
+    "differences": [
+      "Rome relied more heavily on indirect taxes and tribute",
+      "China had more systematic poll tax system", 
+      "Roman tax farming vs Chinese bureaucratic collection",
+      "Different corvée labor requirements"
+    ]
+  },
+  "academic_sources": [
+    {
+      "author": "P.A. Brunt",
+      "title": "Roman Imperial Themes",
+      "publisher": "Oxford University Press",
+      "year": "1990"
+    },
+    {
+      "author": "Keith Hopkins",
+      "title": "Taxes and Trade in the Roman Empire (200 B.C. - A.D. 400)",
+      "journal": "Journal of Roman Studies", 
+      "year": "1980",
+      "volume": "70",
+      "pages": "101-125"
+    },
+    {
+      "author": "Roger S. Bagnall",
+      "title": "Egypt in Late Antiquity",
+      "publisher": "Princeton University Press",
+      "year": "1993"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "dynasty": "Han Dynasty",
+    "period": "206 BCE - 220 CE",
+    "subdivisions": ["Western Han (206 BCE - 9 CE)", "Xin (9 - 23 CE)", "Eastern Han (25 - 220 CE)"],
+    "last_updated": "2024-11-20",
+    "data_reliability": "high",
+    "primary_sources": [
+      "Hanshu (History of the Former Han Dynasty)",
+      "Hou Hanshu (History of the Later Han Dynasty)"
+    ]
+  },
+  "taxation_system": {
+    "overview": "The Han Dynasty established the foundational taxation system for imperial China, combining land taxes, poll taxes, and corvée labor obligations.",
+    "major_reforms": [
+      {
+        "year": "156 BCE",
+        "emperor": "Emperor Jing",
+        "reform": "Reduced land tax from 1/15 to 1/30 of harvest",
+        "source": "Hanshu, Treatise on Food and Money"
+      }
+    ]
+  },
+  "tax_categories": [
+    {
+      "type": "land_tax",
+      "chinese_name": "田租",
+      "description": "Tax on agricultural land based on harvest yield",
+      "rates": [
+        {
+          "period": "Early Western Han",
+          "rate": "1/15 of harvest",
+          "percentage": "6.67%",
+          "source": "Hanshu 24A.1134"
+        },
+        {
+          "period": "156 BCE onwards", 
+          "rate": "1/30 of harvest",
+          "percentage": "3.33%",
+          "source": "Hanshu 24A.1134"
+        }
+      ],
+      "collection_method": "In-kind (grain) or cash equivalent",
+      "exemptions": "Small landholders, disaster areas"
+    },
+    {
+      "type": "poll_tax",
+      "chinese_name": "算赋",
+      "description": "Per capita tax on adult population",
+      "rates": [
+        {
+          "period": "Western Han",
+          "rate": "120 qian per adult",
+          "age_range": "15-56 years",
+          "source": "Hanshu 24A.1135"
+        },
+        {
+          "period": "Eastern Han", 
+          "rate": "240 qian per adult",
+          "age_range": "20-60 years",
+          "source": "Hou Hanshu 1/1.14"
+        }
+      ],
+      "collection_method": "Cash payment",
+      "exemptions": "Imperial family, some government officials"
+    },
+    {
+      "type": "corvee_labor",
+      "chinese_name": "徭役",
+      "description": "Mandatory labor service for public works",
+      "obligations": [
+        {
+          "type": "regular_service",
+          "duration": "1 month per year",
+          "age_range": "23-56 years",
+          "alternatives": "Cash payment in lieu of service"
+        },
+        {
+          "type": "military_service", 
+          "duration": "2 years",
+          "age_range": "23-56 years",
+          "frequency": "Once in lifetime"
+        }
+      ]
+    }
+  ],
+  "total_tax_burden": {
+    "estimates": [
+      {
+        "source": "Walter Scheidel, Stanford University",
+        "methodology": "GDP percentage estimation",
+        "estimate": "7-10% of GDP",
+        "period": "Western Han stable period",
+        "academic_source": "Scheidel, W. (2009). 'Rome and China: Comparative Perspectives on Ancient World Empires'"
+      }
+    ],
+    "regional_variations": "Higher in core regions, lower in frontier areas",
+    "social_distribution": "Regressive - higher burden on peasants relative to income"
+  },
+  "academic_sources": [
+    {
+      "author": "Wang Yü-ch'üan",
+      "title": "An Outline of the Central Government of the Former Han Dynasty", 
+      "journal": "Harvard Journal of Asiatic Studies",
+      "year": "1949",
+      "pages": "134-187"
+    },
+    {
+      "author": "Hans Bielenstein",
+      "title": "The Bureaucracy of Han Times",
+      "publisher": "Cambridge University Press", 
+      "year": "1980"
+    },
+    {
+      "author": "Michael Loewe",
+      "title": "The Government of the Qin and Han Empires",
+      "publisher": "Hackett Publishing",
+      "year": "2006"
+    }
+  ],
+  "data_limitations": [
+    "Limited regional data - most sources focus on capital region",
+    "Significant differences between nominal rates and actual collection",
+    "Incomplete data for Eastern Han period",
+    "Currency conversions approximate due to changing monetary standards"
+  ]
+}

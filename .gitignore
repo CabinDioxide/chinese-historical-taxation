@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Analysis outputs
+analysis/visualization/output/
+*.png
+*.pdf
+*.svg
+
+# Data processing temporary files
+*.tmp
+*.temp
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Documentation builds
+docs/_build/
+site/
+
+# Research notes (personal)
+notes/
+drafts/
+*.draft
+
+# Large data files (use Git LFS)
+*.xlsx
+*.csv
+data/raw/
+
+# Academic software
+*.bib.bak
+*.fls
+*.fdb_latexmk
