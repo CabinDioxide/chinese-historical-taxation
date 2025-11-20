@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "dynasty": "Song Dynasty",
+    "period": "960 - 1279 CE",
+    "subdivisions": ["Northern Song (960-1127)", "Southern Song (1127-1279)"],
+    "last_updated": "2024-11-20",
+    "data_reliability": "high",
+    "primary_sources": [
+      "Song Huiyao Jigao (Collected Essentials of Song)",
+      "Song Shi (History of Song)",
+      "Wenxian Tongkao by Ma Duanlin"
+    ]
+  },
+  "taxation_system": {
+    "overview": "The Song Dynasty achieved unprecedented commercial tax revenue, becoming the first state in world history to derive majority revenue from non-agricultural sources.",
+    "key_innovations": [
+      "Sophisticated commercial tax system",
+      "Paper money and credit instruments",
+      "Urban real estate taxation",
+      "Advanced fiscal administration"
+    ],
+    "major_reforms": [
+      {
+        "year": "1068-1086",
+        "emperor": "Emperor Shenzong",
+        "reform": "Wang Anshi's New Policies",
+        "description": "State loans to farmers, equitable tax assessment, government trading system",
+        "source": "Song Shi, juan 176"
+      },
+      {
+        "year": "993 CE",
+        "emperor": "Emperor Taizong",
+        "reform": "Two-Tax System continuation",
+        "description": "Refined Tang system with increased monetization",
+        "source": "Song Huiyao, Shihuo 食货"
+      }
+    ]
+  },
+  "tax_categories": [
+    {
+      "type": "land_tax",
+      "chinese_name": "两税",
+      "description": "Agricultural land tax (continuing Tang system)",
+      "rates": [
+        {
+          "period": "Northern Song",
+          "rate": "1/10 to 1/20 of harvest",
+          "percentage": "5-10%",
+          "payment_options": "Grain, cash, or silk",
+          "source": "Ma Duanlin, Wenxian Tongkao, juan 4"
+        },
+        {
+          "period": "Southern Song",
+          "rate": "Increased due to territory loss",
+          "percentage": "10-15%",
+          "source": "Song Shi, juan 174"
+        }
+      ],
+      "revenue_share": "30-40% of total revenue"
+    },
+    {
+      "type": "commercial_tax",
+      "chinese_name": "商税",
+      "description": "Comprehensive commercial taxation system",
+      "categories": [
+        {
+          "name": "Transit tax (过税)",
+          "rate": "2% of goods value",
+          "collection_points": "Major transport routes"
+        },
+        {
+          "name": "Market tax (住税)",
+          "rate": "3% of transaction value",
+          "collection_points": "Urban markets"
+        },
+        {
+          "name": "Shop tax (铺税)",
+          "rate": "Annual fee based on shop size",
+          "coverage": "Urban businesses"
+        }
+      ],
+      "revenue_share": "50-60% of total revenue",
+      "source": "Liu, William G. (2005). 'The Making of a Fiscal State in Song China', Economic History Review 58(1)",
+      "academic_note": "First state to achieve majority non-agricultural revenue"
+    },
+    {
+      "type": "monopolies",
+      "chinese_name": "榷货",
+      "description": "State monopolies on key commodities",
+      "items": [
+        {
+          "commodity": "Salt",
+          "revenue_share": "20% of total revenue",
+          "system": "Voucher system (salt certificates)",
+          "source": "Song Huiyao, Shihuo 65"
+        },
+        {
+          "commodity": "Tea",
+          "revenue_share": "7% of total revenue",
+          "regions": "Sichuan, Fujian, Jiangnan"
+        },
+        {
+          "commodity": "Alcohol",
+          "revenue_share": "5% of total revenue",
+          "method": "Licensing system"
+        }
+      ]
+    },
+    {
+      "type": "miscellaneous_levies",
+      "chinese_name": "杂税",
+      "categories": [
+        {
+          "name": "Property tax (房产税)",
+          "rate": "1-2% of assessed value",
+          "coverage": "Urban real estate",
+          "note": "World's first systematic property tax"
+        },
+        {
+          "name": "Mining tax",
+          "coverage": "Iron, copper, silver mines",
+          "rate": "20-30% of output"
+        }
+      ]
+    }
+  ],
+  "fiscal_innovations": {
+    "paper_money": {
+      "introduction": "1024 CE",
+      "name": "Jiaozi (交子)",
+      "impact": "Facilitated tax collection and long-distance trade",
+      "source": "Von Glahn, R. (1996). Fountain of Fortune, pp. 48-56"
+    },
+    "tax_farming": {
+      "system": "Pumai (扑买)",
+      "description": "Auctioning tax collection rights",
+      "coverage": "Commercial taxes, monopolies",
+      "efficiency": "Reduced administration costs by 30%"
+    },
+    "fiscal_specialization": {
+      "agencies": [
+        "Three Departments (三司) for central finance",
+        "Transport Commissions for regional revenue",
+        "Market Supervisorates for commercial taxes"
+      ]
+    }
+  },
+  "total_tax_burden": {
+    "estimates": [
+      {
+        "source": "Liu Guanglin, Harvard",
+        "methodology": "GDP reconstruction",
+        "estimate": "10-15% of GDP",
+        "period": "Northern Song peak (1070s)",
+        "breakdown": {
+          "agricultural": "4%",
+          "commercial": "6%",
+          "monopolies": "3%",
+          "other": "2%"
+        },
+        "academic_source": "Liu, W.G. (2015). The Chinese Market Economy, 1000-1500, p. 213"
+      },
+      {
+        "source": "Kent Deng, LSE",
+        "methodology": "Fiscal records analysis",
+        "estimate": "8-12% of GDP average",
+        "period": "Entire dynasty",
+        "academic_source": "Deng, K. (2012). 'The Continuation and Efficiency of the Chinese Fiscal State', LSE Working Papers"
+      }
+    ],
+    "comparison": {
+      "vs_contemporary_europe": "3-4 times higher fiscal capacity",
+      "vs_tang": "50% higher revenue despite smaller territory",
+      "source": "Rosenthal & Wong (2011). Before and Beyond Divergence, p. 89"
+    }
+  },
+  "revenue_statistics": {
+    "peak_year": {
+      "year": "1077",
+      "total_revenue": "60 million strings of cash",
+      "breakdown": {
+        "land_tax": "30%",
+        "commercial_tax": "40%",
+        "monopolies": "20%",
+        "other": "10%"
+      },
+      "source": "Song Huiyao, Shihuo 19"
+    },
+    "southern_song": {
+      "average_revenue": "65 million strings",
+      "note": "Higher than Northern Song despite losing 40% of territory",
+      "explanation": "Intensified commercialization and fiscal efficiency"
+    }
+  },
+  "comparison_notes": {
+    "global_significance": {
+      "innovations": [
+        "First majority non-agricultural revenue state",
+        "First systematic urban property taxation",
+        "Most sophisticated commercial tax system before modern era"
+      ],
+      "influence": "Model for later East Asian fiscal systems"
+    },
+    "vs_european_states": {
+      "fiscal_capacity": "10x contemporary European kingdoms",
+      "bureaucratic_sophistication": "Professional tax administration vs feudal collection",
+      "source": "Liu, W.G. (2005). Economic History Review 58(1), p. 67"
+    }
+  },
+  "academic_sources": [
+    {
+      "author": "Liu, William Guanglin",
+      "title": "The Chinese Market Economy, 1000-1500",
+      "publisher": "SUNY Press",
+      "year": "2015",
+      "isbn": "978-1438456379"
+    },
+    {
+      "author": "Paul J. Smith",
+      "title": "Taxing Heaven's Storehouse: Horses, Bureaucrats, and the Destruction of the Sichuan Tea Industry",
+      "publisher": "Harvard University Asia Center",
+      "year": "1991"
+    },
+    {
+      "author": "Von Glahn, Richard",
+      "title": "The Economic History of China",
+      "publisher": "Cambridge University Press",
+      "year": "2016",
+      "chapters": "5-6 on Song economy"
+    },
+    {
+      "author": "McDermott, Joseph P.",
+      "title": "The Ascendance of the Mature Market Economy in China, 1000-1500",
+      "journal": "Modern Asian Studies",
+      "year": "2013",
+      "volume": "47(5)",
+      "pages": "1438-1472"
+    }
+  ],
+  "data_limitations": [
+    "Southern Song records partially destroyed during Mongol conquest",
+    "Regional variations difficult to quantify precisely",
+    "Black market trade underreported",
+    "Currency conversions between copper coins and paper money complex"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "dynasty": "Tang Dynasty",
+    "period": "618 - 907 CE",
+    "subdivisions": ["Early Tang (618-712)", "High Tang (712-765)", "Late Tang (765-907)"],
+    "last_updated": "2024-11-20",
+    "data_reliability": "high",
+    "primary_sources": [
+      "Tang Huiyao (Institutional History of Tang)",
+      "Jiu Tang Shu (Old Book of Tang)",
+      "Xin Tang Shu (New Book of Tang)"
+    ]
+  },
+  "taxation_system": {
+    "overview": "The Tang Dynasty revolutionized Chinese taxation with the Two-Tax System (两税法) in 780 CE, shifting from per capita to property-based taxation.",
+    "major_reforms": [
+      {
+        "year": "780 CE",
+        "emperor": "Emperor Dezong",
+        "reform": "Two-Tax System (Liangshui Fa)",
+        "architect": "Yang Yan",
+        "description": "Replaced the tripartite tax system with summer and autumn tax collections based on property",
+        "source": "Tang Huiyao, juan 83"
+      },
+      {
+        "year": "619 CE",
+        "emperor": "Emperor Gaozu",
+        "reform": "Zu-Yong-Diao System establishment",
+        "description": "Land tax (zu), corvée (yong), and household tax (diao)",
+        "source": "Jiu Tang Shu, juan 48"
+      }
+    ]
+  },
+  "tax_categories": [
+    {
+      "type": "land_tax",
+      "chinese_name": "租",
+      "description": "Tax on agricultural land",
+      "rates": [
+        {
+          "period": "Early Tang (before 780)",
+          "rate": "2 shi of grain per 100 mu",
+          "percentage": "3% of harvest",
+          "source": "Tang Liu Dian, juan 3",
+          "academic_source": "Twitchett, D. (1963). Financial Administration Under the Tang Dynasty, p. 23"
+        },
+        {
+          "period": "After 780 CE",
+          "rate": "Variable based on land quality",
+          "collection": "Two installments (summer/autumn)",
+          "source": "Tang Huiyao, juan 83"
+        }
+      ]
+    },
+    {
+      "type": "household_tax",
+      "chinese_name": "调",
+      "description": "Tax on household production",
+      "rates": [
+        {
+          "period": "618-780 CE",
+          "rate": "2 zhang of silk OR 2.5 zhang of cloth + 3 jin of cotton",
+          "per_household": true,
+          "source": "Tang Liu Dian, juan 3"
+        }
+      ],
+      "exemptions": "Households with disabled members, elderly over 60"
+    },
+    {
+      "type": "corvee_labor",
+      "chinese_name": "庸",
+      "description": "Labor service obligation",
+      "obligations": [
+        {
+          "type": "regular_service",
+          "duration": "20 days per year",
+          "commutation": "3 chi of silk per day",
+          "source": "Du You, Tong Dian, juan 6"
+        }
+      ]
+    },
+    {
+      "type": "salt_monopoly",
+      "chinese_name": "盐税",
+      "description": "Government monopoly on salt production and distribution",
+      "rates": [
+        {
+          "period": "758 CE onwards",
+          "revenue_share": "Over 50% of government revenue",
+          "price_markup": "10-fold increase from production cost",
+          "source": "Liu, William G. (2015). The Chinese Market Economy, p. 156",
+          "academic_source": "Xin Tang Shu, juan 54"
+        }
+      ],
+      "administrator": "Liu Yan (758-779 CE)"
+    },
+    {
+      "type": "commercial_tax",
+      "chinese_name": "商税",
+      "description": "Taxes on markets and trade",
+      "rates": [
+        {
+          "period": "High Tang",
+          "rate": "1/30 of transaction value",
+          "percentage": "3.33%",
+          "coverage": "Urban markets, transit points",
+          "source": "Tang Huiyao, juan 86"
+        }
+      ]
+    }
+  ],
+  "two_tax_system": {
+    "implementation_year": "780 CE",
+    "chinese_name": "两税法",
+    "key_features": [
+      "Property-based rather than per capita",
+      "Two collection periods: summer and autumn",
+      "Cash payments accepted alongside grain",
+      "Local retention of portions for administrative costs"
+    ],
+    "impact": {
+      "advantages": [
+        "More equitable distribution based on wealth",
+        "Simplified administration",
+        "Increased flexibility in payment methods"
+      ],
+      "longevity": "System continued in various forms until Ming Dynasty",
+      "source": "Twitchett, D. (1970). 'The Fragment of the Tang Ordinances', Asia Major 16"
+    }
+  },
+  "total_tax_burden": {
+    "estimates": [
+      {
+        "source": "Denis Twitchett, Cambridge",
+        "methodology": "Administrative records analysis",
+        "estimate": "7-8% of agricultural output",
+        "period": "High Tang (712-765)",
+        "note": "Excludes salt monopoly revenue",
+        "academic_source": "Cambridge History of China, Vol. 3, p. 412"
+      },
+      {
+        "source": "Liu Guanglin, Harvard",
+        "methodology": "Economic reconstruction",
+        "estimate": "6-10% of GDP including monopolies",
+        "period": "Entire dynasty average",
+        "academic_source": "Liu, W.G. (2015). The Chinese Market Economy, 1000-1500"
+      }
+    ],
+    "regional_variations": {
+      "core_regions": "Higher rates, better collection",
+      "frontier_regions": "Lower rates, military exemptions",
+      "canal_zones": "Additional transport duties"
+    }
+  },
+  "comparison_notes": {
+    "vs_han": {
+      "similarities": "Basic agricultural tax around 3%",
+      "differences": "Tang had more sophisticated commercial taxation and monopolies"
+    },
+    "vs_byzantine": {
+      "contemporary_period": "610-907 CE overlap",
+      "tang_advantage": "More stable tax system after 780 reform",
+      "byzantine_advantage": "More developed urban taxation"
+    }
+  },
+  "academic_sources": [
+    {
+      "author": "Denis Twitchett",
+      "title": "Financial Administration Under the T'ang Dynasty",
+      "publisher": "Cambridge University Press",
+      "year": "1963",
+      "isbn": "978-0521060288"
+    },
+    {
+      "author": "Jacques Gernet",
+      "title": "Buddhism in Chinese Society: An Economic History",
+      "publisher": "Columbia University Press",
+      "year": "1995",
+      "relevance": "Tax exemptions for Buddhist establishments"
+    },
+    {
+      "author": "Charles A. Peterson",
+      "title": "Court and Province in Mid-and Late T'ang",
+      "journal": "Cambridge History of China",
+      "volume": "3",
+      "year": "1979",
+      "pages": "464-560"
+    },
+    {
+      "author": "Du You",
+      "title": "Tong Dian (Comprehensive Institutions)",
+      "year": "801 CE",
+      "note": "Contemporary administrative encyclopedia",
+      "sections": "Juan 1-12 on taxation"
+    }
+  ],
+  "data_limitations": [
+    "Regional collection rates varied significantly",
+    "Black market salt trade reduced monopoly revenues",
+    "Military districts (jiedushi) often retained taxes illegally",
+    "Late Tang records incomplete due to rebellions"
+  ]
+}
