@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Historical Taxation Database</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="chinese-text">中国历代税负数据库</span>
+                <span class="english-text">Chinese Historical Taxation</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comparison">Comparison</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#data-explorer">Data Explorer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sources">Sources</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/CabinDioxide/chinese-historical-taxation" target="_blank">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Chinese Historical Taxation Database
+                    </h1>
+                    <p class="lead mb-4">
+                        A comprehensive academic database comparing taxation systems across Chinese dynasties 
+                        with contemporary civilizations
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3>2000+</h3>
+                            <p>Years Covered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5</h3>
+                            <p>Major Dynasties</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>6</h3>
+                            <p>Comparative Civilizations</p>
+                        </div>
+                    </div>
+                    <a href="#overview" class="btn btn-lg btn-outline-light mt-4">Explore Data</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Findings</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Tax Burden Evolution</h4>
+                            <canvas id="taxBurdenChart"></canvas>
+                            <p class="mt-3">Chinese dynasties maintained relatively stable tax burdens of 7-10% GDP, 
+                            comparable to contemporary Rome but lower than medieval Europe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Tax Type Distribution</h4>
+                            <canvas id="taxTypeChart"></canvas>
+                            <p class="mt-3">Land taxes dominated early dynasties, while commercial taxes became 
+                            increasingly important in Song and later periods.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline -->
+    <section id="timeline" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Historical Timeline</h2>
+            <div class="timeline-container">
+                <div id="timeline-svg"></div>
+            </div>
+            <div class="timeline-controls text-center mt-4">
+                <button class="btn btn-outline-primary" onclick="zoomIn()">Zoom In</button>
+                <button class="btn btn-outline-primary" onclick="zoomOut()">Zoom Out</button>
+                <button class="btn btn-outline-primary" onclick="resetZoom()">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparative Analysis -->
+    <section id="comparison" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Comparative Analysis</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="comparison-controls mb-4">
+                        <label class="me-3">
+                            <input type="checkbox" class="dynasty-check" value="han" checked> Han Dynasty
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="dynasty-check" value="tang" checked> Tang Dynasty
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="dynasty-check" value="song" checked> Song Dynasty
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="dynasty-check" value="rome" checked> Roman Empire
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="dynasty-check" value="byzantine" checked> Byzantine
+                        </label>
+                    </div>
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <h5>Lowest Tax Burden</h5>
+                        <p class="display-4 text-primary">Han Dynasty</p>
+                        <p>3.33% land tax after 156 BCE reform</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <h5>Most Innovative</h5>
+                        <p class="display-4 text-success">Song Dynasty</p>
+                        <p>First to derive majority revenue from commercial taxes</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="insight-card">
+                        <h5>Most Stable</h5>
+                        <p class="display-4 text-info">Tang Dynasty</p>
+                        <p>Two-tax system lasted 780-1580s CE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Explorer -->
+    <section id="data-explorer" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Interactive Data Explorer</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-panel">
+                        <h5>Filter Data</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Dynasty/Civilization</label>
+                            <select id="dynastyFilter" class="form-select" multiple>
+                                <option value="han">Han Dynasty</option>
+                                <option value="tang">Tang Dynasty</option>
+                                <option value="song">Song Dynasty</option>
+                                <option value="ming">Ming Dynasty</option>
+                                <option value="qing">Qing Dynasty</option>
+                                <option value="rome">Roman Empire</option>
+                                <option value="byzantine">Byzantine Empire</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tax Type</label>
+                            <select id="taxTypeFilter" class="form-select">
+                                <option value="all">All Types</option>
+                                <option value="land">Land Tax</option>
+                                <option value="poll">Poll Tax</option>
+                                <option value="commercial">Commercial Tax</option>
+                                <option value="corvee">Corvée Labor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Time Period</label>
+                            <input type="range" class="form-range" id="timeRange" min="-500" max="2000" value="500">
+                            <span id="timeDisplay">500 CE</span>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="updateDataExplorer()">Apply Filters</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="data-table-container">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Dynasty/Civilization</th>
+                                    <th>Period</th>
+                                    <th>Tax Type</th>
+                                    <th>Rate</th>
+                                    <th>GDP %</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTableBody">
+                                <!-- Data will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section id="sources" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Academic Sources</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="source-list">
+                        <div class="source-item">
+                            <h6>Primary Sources</h6>
+                            <ul>
+                                <li>Hanshu (History of the Former Han Dynasty)</li>
+                                <li>Hou Hanshu (History of the Later Han Dynasty)</li>
+                                <li>Tang Huiyao (Institutional History of Tang)</li>
+                                <li>Song Huiyao (Institutional History of Song)</li>
+                            </ul>
+                        </div>
+                        <div class="source-item">
+                            <h6>Key Academic Publications</h6>
+                            <ul>
+                                <li>Scheidel, W. (2009). Rome and China: Comparative Perspectives on Ancient World Empires. Oxford University Press.</li>
+                                <li>Liu, William Guanglin (2015). The Chinese Market Economy, 1000-1500. SUNY Press.</li>
+                                <li>Wong, R. Bin (1997). China Transformed: Historical Change and the Limits of European Experience. Cornell University Press.</li>
+                                <li>Ma, Debin (2014). "State capacity and great divergence". Economic History Review 67(1).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/CabinDioxide/chinese-historical-taxation/blob/main/docs/methodology.md" 
+                           class="btn btn-outline-primary" target="_blank">
+                            View Full Methodology
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">Chinese Historical Taxation Database © 2024</p>
+            <p class="mb-0">
+                Open Source Academic Project | 
+                <a href="https://github.com/CabinDioxide/chinese-historical-taxation" class="text-white">GitHub</a> | 
+                <a href="https://creativecommons.org/licenses/by/4.0/" class="text-white">CC BY 4.0</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="visualizations.js"></script>
+</body>
+</html>
